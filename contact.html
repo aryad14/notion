@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Gracia - About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery-style.css">
+    <script src="https://kit.fontawesome.com/4c419b61d5.js" crossorigin="anonymous"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=author@400,500,200,600,300,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=excon@400,700,500,300,100&display=swap" rel="stylesheet">
+
+    <style>
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*--- additional css --*/
+
+        /*---Change column counts for gallery layout---*/
+        #app {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 3;
+            -webkit-column-gap: 15px;
+            -moz-column-gap: 15px;
+            column-gap: 15px;
+            
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+        
+        @media (max-width: 576px) {
+            #app {
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+                column-count: 2;
+            }
+        }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <!-- Navigation -->
+    <div class="bg-dark sticky-top">
+        <nav class="navbar m-4 mx-4 px-2 px-md-0">
+            <div class="container">
+                <a href="index.html" class="navbar-brand text-white fw-bold fs-4">David Gracia</a>
+                <button class="btn btn-dark bg-dark border-0 fs-4" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header ms-auto">
+            <button type="button" class="btn-close text-white m-2 fs-3" data-bs-dismiss="offcanvas" aria-label="Close"><span><i class="fa-solid fa-xmark"></i></span></button>
+        </div>
+        <div class="offcanvas-body d-flex align-content-between flex-wrap w-100">
+            <ul class="navbar-nav h-100">
+                <li class="my-2 fs-2 mx-3">
+                    <a class="nav-link text-decoration-none text-white" href="gallery.html">Work</a>
+                </li>
+                <li class="my-2 fs-2 mx-3">
+                    <a class="nav-link text-decoration-none text-white" href="about.html">About</a>
+                </li>
+                <li class="my-2 fs-2 mx-3">
+                    <a class="nav-link text-decoration-none text-white" href="contact.html">Contact</a>
+                </li>
+                <div class="d-flex flex-row mx-2 mt-auto mb-4">
+                    <a href="#" class="text-white"><i class="fa-brands fa-facebook-f fs-5 mx-2"></i></a>
+                    <a href="#" class="text-white"><i class="fa-brands fa-instagram fs-5 mx-2"></i></a>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <section class="p-0">
+        <div class="contact-container">
+            <div class="row w-100 justify-content-center g-2">
+                <div class="open-assignments flex-column flex-md-row d-flex gap-2 justify-content-center">
+                    <h3 class="w-100 font-excon">Open for Assignments</h3>
+                    <h5 class="w-100">Paragraph Text Comes Here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</h5>
+                </div>
+                <div class="col-lg-6 px-0 px-md-4 d-flex align-items-start">
+                    <div class="my-2 font-excon contact-brief">
+                        <h3>Get in touch</h3>
+                        <h5>Paragraph text comes here. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum dolor sit amet, consectetur elit.</h5>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100 d-flex align-items-center justify-content-center w-auto">
+                        <div class="h-auto about-text-container d-flex flex-column justify-content-start align-items-center">
+                            <div class="w-100">
+                                <div class="row gx-4">
+                                    <div class="col-md-6 px-md-0 pe-md-2 my-3 px-0">
+                                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="col-md-6 px-md-0 ps-md-2 my-3 px-0">
+                                        <label for="exampleFormControlInput2" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput2"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <label for="exampleFormControlInput3" class="form-label">Email</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput3"
+                                        placeholder="email@example.com">
+                                </div>
+                                <div class="my-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="button w-100">
+                                <a href="contact.html"><button class="contact-btn btn btn-dark px-4 py-3 mt-2">Submit</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid py-4">
+        <div
+            class="d-flex justify-content-center align-items-center flex-column my-4 gap-3 flex-sm-row justify-content-sm-between">
+            <span class="text-muted d-flex align-items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-share"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+                </svg>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </span>
+            <span class="text-muted me-sm-auto copyright-text">Copyright Text Comes Here</span>
+            <span class="text-muted copyright-text">Made with <a href="#" class="text-decoration-none text-muted">Udee
+                    Space</a></span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://udee.space/storage/app/public/community/assets/js/img-previewer.min.js"></script>
+    <script>
+        const a = new ImgPreviewer('body', {
+            scrollbar: true
+        })
+    </script>
+</body>
+
+</html>
